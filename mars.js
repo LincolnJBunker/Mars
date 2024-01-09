@@ -5,12 +5,33 @@ alert('All systems go!');
 alert("Let's Start!");
 
 const username = prompt("Hi there! What's your name?");
+
+let planetChoice = prompt (`What planet would you like to go to?
+A   Saturn
+B   Venus
+C   Mercury
+D   !!Mars!!
+`);
+let planet
+if(planetChoice === "A") {
+    alert('The spaceship for Saturn left last week, so Mars it is!')
+}
+else if(planetChoice === "B"){
+    alert("It's not worth the trip homie :// we're going to mars")
+}
+else if(planetChoice === "C"){
+    alert("Its the wrong season to go to Mercury homie! We finna hit up Mars")
+}
+else if(planetChoice === "D"){
+    alert("That's what we like to hear! MARZ!!")
+}
 alert(`Hello ${username}-Welcome to the Mars Adventure Game.`);
 
 alert('Yesterday, you received a call from your good friend at NASA');
 alert("They need someone to go to Mars this weekend, and YOU'VE been chosen!!");
 let excited = prompt("Are you excited? Type Y o N");
 excited = excited.toUpperCase();
+excited = excited.trim();
 if (excited.startsWith("Y")) {
     alert(`I knew you'd say that ${username}. It's so cool that you're going to Mars!`)
 }
