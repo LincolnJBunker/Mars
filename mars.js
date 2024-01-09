@@ -36,12 +36,40 @@ const companionType = prompt("What kind of animal would you like to bring?");
 let companionName = prompt("What is your companion's name?");
 
 let firstLetter = companionName [0];
-firstLetter = firstLetter.toUppercase();
+firstLetter = firstLetter.toUpperCase();
 
 let otherLetters = companionName.slice(1);
-otherLetters= otherLetters.toLowerCase();
+otherLetters = otherLetters.toLowerCase();
 
 companionName = firstLetter + otherLetters;
 
-
 alert(`Dope, so you bringing ${companionName} the ${companionType}`);
+
+alert("NASA has a interior design team offering to outfit your space ship.");
+alert(`You have a couple of options for the interior decor of your ship.
+Your options are:
+A   Granola Girl type of vibe
+B   E-Boy kinda feel
+C   Country man and Cowboys
+`);
+let decorChoice = prompt("What type of decor would you like? A, B or C?");
+decorChoice = decorChoice.toUpperCase();
+let decor;
+if(decorChoice === 'A') {
+    decor = 'granola girl';
+}
+else if (decorChoice === 'B') {
+    decor = 'E-Boy';
+}
+else if (decorChoice === 'C') {
+    decor = 'Cowboy';
+}
+
+alert(`${username} and ${companionName}, surfing the celestial abyss, in a ${decor} spaceship.`);
+
+let timer = 5;
+while (timer > 0) {
+    alert(`${timer}...`);
+    timer -= 1;
+}
+alert ('*** LIFTOFF ***')
