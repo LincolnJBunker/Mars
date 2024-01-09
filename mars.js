@@ -12,14 +12,14 @@ alert("They need someone to go to Mars this weekend, and YOU'VE been chosen!!");
 let excited = prompt("Are you excited? Type Y o N");
 excited = excited.toUpperCase();
 if (excited.startsWith("Y")) {
-    alert("I knew you'd say that. It's so cool that you're going to Mars!")
+    alert(`I knew you'd say that ${username}. It's so cool that you're going to Mars!`)
 }
 if (excited.startsWith("N")) {
     alert("Well, it's too late to back out now")
 }
 
 alert("It's time to pack for your trip to Mars.");
-let numSuitcases = prompt("How many suitcases do you plan to bring?");
+let numSuitcases = prompt(`How many suitcases do you plan to bring ${username} ?`);
 numSuitcases = Number(numSuitcases);
 
 if (numSuitcases > 2) {
@@ -32,7 +32,7 @@ else {
 }
 
 alert("You're allowed to bring one companion animal with you.");
-const companionType = prompt("What kind of animal would you like to bring?");
+const companionType = prompt(`What kind of animal would you like to bring ${username} ?`);
 let companionName = prompt("What is your companion's name?");
 
 let firstLetter = companionName [0];
